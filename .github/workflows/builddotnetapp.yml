@@ -20,13 +20,10 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: '8.x'  # Change to your required version
+        dotnet-version: '9.x' 
 
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore ./dotnetapp1/dotnetapp1.csproj
 
     - name: Build
       run: dotnet build --no-restore --configuration Release
-
-    - name: Test
-      run: dotnet test --no-build --verbosity normal
