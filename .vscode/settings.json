@@ -1,5 +1,6 @@
 {
     "github-actions.workflows.pinned.workflows": [
-        ".github/workflows/builddotnetapp.yml"
+        ".github/workflows/builddotnetapp.yml",
+        ".github/workflows/azure-static-web-apps-green-sky-045c9061e.yml"
     ]
 }
